@@ -22,8 +22,7 @@
         app:layout_constraintVertical_bias="0.0"
 
         app:srcCompat="@drawable/fifa_20_logo"
-        android:contentDescription="logo"
-        />
+        android:contentDescription="logo" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -196,7 +195,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Do you have Account?Login "
+        android:text="Do you have Account?Login"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
