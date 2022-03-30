@@ -13,13 +13,15 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:src="@drawable/fifa_20_logo"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -43,7 +45,8 @@
             android:gravity="center|center_horizontal|center_vertical"
             android:text="Search"
             android:textColor="@color/dark_navy2"
-            android:textSize="30sp"
+            android:textSize="24sp"
+            app:cornerRadius="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -53,11 +56,12 @@
         android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="70dp"
         android:padding="3dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -343,6 +347,194 @@
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/ageMinValue"
                         app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:splitMotionEvents="false"
+                app:cardBackgroundColor="#A81C1F27"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/positionLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="POSITION"
+                        android:textAlignment="center"
+                        android:textColor="@color/steel_blue"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.122" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:buttonTint="@color/yellow"
+                        android:checked="true"
+                        android:duplicateParentState="false"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="GOALKEEPER"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white_f2"
+                        android:textColorHighlight="@color/dark_navy1"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:buttonTint="@color/yellow"
+                        android:checked="true"
+                        android:duplicateParentState="false"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="DEFENDER"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white_f2"
+                        android:textColorHighlight="@color/dark_navy1"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guideline3"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="189dp"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:buttonTint="@color/yellow"
+                        android:checked="true"
+                        android:duplicateParentState="false"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="MIDFIELD"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white_f2"
+                        android:textColorHighlight="@color/dark_navy1"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox4"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox4" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:buttonTint="@color/yellow"
+                        android:checked="true"
+                        android:duplicateParentState="false"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="FORWARD"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white_f2"
+                        android:textColorHighlight="@color/dark_navy1"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.854" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:splitMotionEvents="false"
+                app:cardBackgroundColor="#A81C1F27"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/roleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="ROLE"
+                        android:textAlignment="center"
+                        android:textColor="@color/steel_blue"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.122" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="291dp"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/yellow"
+                        android:dropDownWidth="match_parent"
+                        android:foregroundTint="#B31E1E"
+                        android:textDirection="ltr"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/roleLabel"
+                        app:layout_constraintVertical_bias="0.388" />
+
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>

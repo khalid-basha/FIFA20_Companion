@@ -11,7 +11,7 @@
         >
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.FIFA20CompanionWithBar"
+            android:theme="@style/Theme.FIFA20Companion"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

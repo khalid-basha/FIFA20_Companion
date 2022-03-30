@@ -71,7 +71,7 @@
                             android:paddingLeft="10sp"
 
                             android:textColor="#FFFFFF"
-                            android:textColorHint="@color/gray"
+                            android:textColorHint="#90A4AE"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -127,7 +127,8 @@
                 android:text="LogIn"
                 android:textColor="@color/dark_navy2"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:cornerRadius="12dp" />
 
             <TextView
                 android:id="@+id/textView9"
