@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg_tablet_web_1080p"
+    tools:context=".SearchFilters">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/fifa_20_logo"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Search"
+            android:textColor="@color/dark_navy2"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:splitMotionEvents="false"
+                app:cardBackgroundColor="#A81C1F27"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/playerLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="PLAYER NAME"
+                        android:textAlignment="center"
+                        android:textColor="@color/steel_blue"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.122" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName5"
+                        android:layout_width="273dp"
+                        android:layout_height="48dp"
+                        android:background="#722E333C"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="NAME"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textColorHint="#B07F8995"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+                        app:layout_constraintVertical_bias="0.436" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:splitMotionEvents="false"
+                app:cardBackgroundColor="#A81C1F27"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/overallLabel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="OVERALL"
+                        android:textAlignment="center"
+                        android:textColor="@color/steel_blue"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.122" />
+
+                    <TextView
+                        android:id="@+id/overall2"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="MIN"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/overall1"
+                        app:layout_constraintEnd_toStartOf="@+id/overall1"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/overallLabel"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/overall1"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="MAX"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/overallMaxValue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/overall2"
+                        app:layout_constraintTop_toBottomOf="@+id/overallLabel" />
+
+                    <EditText
+                        android:id="@+id/overallMinValue"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#722E333C"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_bold"
+                        android:hint="0"
+
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textColorHint="#8BF2F2F2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/overallMaxValue"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/overall2" />
+
+                    <EditText
+                        android:id="@+id/overallMaxValue"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+
+
+                        android:layout_marginBottom="15dp"
+                        android:background="#722E333C"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_bold"
+                        android:hint="99"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textColorHint="#8BF2F2F2"
+                        app:guidelineUseRtl="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/overallMinValue"
+                        app:layout_constraintTop_toBottomOf="@+id/overall1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:splitMotionEvents="false"
+                app:cardBackgroundColor="#A81C1F27"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/ageLabel"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="AGE"
+                        android:textAlignment="center"
+                        android:textColor="@color/steel_blue"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.122" />
+
+                    <TextView
+                        android:id="@+id/textView121"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="MIN"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                        app:layout_constraintEnd_toStartOf="@+id/textView14"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ageLabel"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="MAX"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/ageMaxValue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView121"
+                        app:layout_constraintTop_toBottomOf="@+id/ageLabel" />
+
+                    <EditText
+                        android:id="@+id/ageMinValue"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#722E333C"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_bold"
+                        android:hint="0"
+
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textColorHint="#8BF2F2F2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/ageMaxValue"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+                    <EditText
+                        android:id="@+id/ageMaxValue"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+
+
+                        android:layout_marginBottom="15dp"
+                        android:background="#722E333C"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto_bold"
+                        android:hint="50"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_f2"
+                        android:textColorHint="#8BF2F2F2"
+                        app:guidelineUseRtl="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/ageMinValue"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
