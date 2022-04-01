@@ -21,7 +21,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
 
-        app:srcCompat="@drawable/fifa_20_logo" />
+        app:srcCompat="@drawable/fifa_20_logo"
+        android:contentDescription="logo" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -64,10 +65,11 @@
                     android:background="#2e333c"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:paddingLeft="10sp"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
                     android:text="Enter Here"
-                    android:textColor="#FFFFFF"
 
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -97,10 +99,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
                     android:text="Enter Here"
-                    android:textColor="#FFFFFF"
 
-                    android:textSize="16sp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:autofillHints="" />
             </LinearLayout>
 
             <LinearLayout
@@ -127,8 +131,10 @@
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName|textPassword"
                     android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
                     android:text="Enter Here"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -159,8 +165,10 @@
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName|textPassword"
-                    android:paddingLeft="10sp"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
                     android:text="Enter Here"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -187,7 +195,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Do you hava  Account?Login "
+        android:text="Do you have Account?Login"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
