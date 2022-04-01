@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bg_tablet_web_1080p"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
 
     <ScrollView
@@ -76,7 +76,7 @@
                             android:paddingLeft="10sp"
 
                             android:textColor="#FFFFFF"
-                            android:textColorHint="@color/gray"
+                            android:textColorHint="#90A4AE"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -134,7 +134,7 @@
                 android:textColor="@color/dark_navy2"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:cornerRadius="35dp" />
+                app:cornerRadius="12dp" />
 
         </LinearLayout>
     </ScrollView>
