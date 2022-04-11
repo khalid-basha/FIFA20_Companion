@@ -9,11 +9,16 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="400dp"
+        android:layout_height="745dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -121,8 +126,9 @@
                 android:id="@+id/button2"
                 android:layout_width="345dp"
                 android:layout_height="52dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginBottom="80dp"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="#F4E771"
                 android:fontFamily="@font/roboto_bold"
                 android:text="LogIn"
                 android:textColor="@color/dark_navy2"
@@ -130,14 +136,19 @@
                 android:textStyle="bold"
                 app:cornerRadius="12dp" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have an Account? SignUP"
-                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="Don't have an Account? SignUP"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,4 +19,11 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:navigationBarColor">@color/dark_navy1</item>
     </style>
+    <style name="Theme.FIFA20Companion.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.FIFA20Companion.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.FIFA20Companion.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
