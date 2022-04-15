@@ -1,12 +1,5 @@
-var mysql = require ('mysql');
-
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "yourusername", 
-    password: "yourpassword", 
-    database: "mydb"
-  });
-
+const DB =require('./databaseConect')
+DB.databas();
 
   // this is used to get the information needed for the player 
   //(name , age ,position , price ... etc)
