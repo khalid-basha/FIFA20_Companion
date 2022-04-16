@@ -48,6 +48,7 @@ let query =db.query(sql,post, (err,result)=>{
 
 
 appl.listen('3000',()=> 
+{
   console.log('server started on port 3000');
 
 });
