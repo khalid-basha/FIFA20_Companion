@@ -1,20 +1,34 @@
-const DB =require('./databaseConect')
-DB.databas();
+//  ---------each login will be inserted like this 
 
-  // each login will be inserted like this 
-  
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "INSERT INTO Account (name, password) VALUES ('Ahmad', '12345')";
-  con.query(sql, function (err, result) {
-    if (err) throw err;
-    console.log("1 record inserted");
-  });
-  
-  });
+  const express = require('express');
+const mysql =require('mysql');
+// Creat Connection 
+const db = mysql.createConnection ({
+  host: "localhost",
+  user: "root", 
+   password:"", 
+  database: "fifa"  
+});
+// conect 
+db.connect( (err)=>{
+if (err){throw err;}
+console.log('MySql Connected ...');
+});
+const appl=express.Router();
 
-  
+
+
+
+   // Verify login information (name and password)
+   appl.get('/Verify/:password',(req,res)=>{
+    let sql = `SELECT *FROM accounts WHERE password =${req.params.password}`;
+    let query =db.query(sql,(err,results)=>{
+      if(err) throw err ;
+      console.log(results);
+      res.send(results);
+         });
+    });
+
 
   //to run it tyoe in terminal ("node login.js")
 
@@ -28,3 +42,6 @@ DB.databas();
 //       console.log("Result: " + result);
 //     });
 //   });
+
+
+module.exports=appl;

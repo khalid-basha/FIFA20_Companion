@@ -1,6 +1,6 @@
-//exports.databas = async () => {
 
 const express = require('express');
+
 const mysql =require('mysql');
 
 // Creat Connection 
@@ -19,7 +19,7 @@ if (err){
 console.log('MySql Connected ...');
 
 });
-const appl=express();
+const appl=express.Router();
 /*
 // create tABLE  
 appl.get('/creattable',(req,res)=>{
@@ -76,7 +76,7 @@ appl.get('/add3/:id',(req,res)=>{
   let query =db.query(sql,(err,results)=>{
     if(err) throw err ;
     console.log(results);
-    res.send('Done ...');
+    res.send(results);
        });
   });
 
@@ -112,12 +112,5 @@ appl.get('/add4/:overall',(req,res)=>{
       });
  });
 
+ module.exports=appl;
 
-appl.listen('3000',()=> 
-{
-  console.log('server started on port 3000');
-
-});
-
-
-//}
