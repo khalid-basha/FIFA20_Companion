@@ -10,7 +10,7 @@
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/Signup.xml" value="0.10416666666666667" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_main2.xml" value="0.18247863247863247" />
+        <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_player.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_search_filters.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/activity_search_player_result.xml" value="0.264" />
@@ -25,6 +25,7 @@
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/login.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/player.xml" value="0.1735042735042735" />
+        <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/recycler_view_item.xml" value="0.20854700854700856" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/sample_search_boxs.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/layout/signup.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/FIFA20Companion/app/src/main/res/mipmap-anydpi-v26/arrowUp.xml" value="0.178" />
@@ -42,7 +43,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.1" />
+        <option name="scale" value="0.4" />
       </ProjectState>
     </option>
   </component>
