@@ -17,8 +17,7 @@
   
   
 // insert 
-//var namee ='asd';
-//var passs='123';
+
 appl.get('/add0',(req,res)=>{
 var name = req.query.name;
 var pass = req.query.password;
