@@ -8,9 +8,13 @@ app.use(bodyParser.json());
 
 
 const Login=require('./login');
+const SignUp=require('./SignUp');
+
 //const GetPlayer=require('./getPlayerInfo');
 
 app.use('/login',Login)
+app.use('/SignUp',SignUp)
+
 //app.use('/getplayer',GetPlayer)
 
 

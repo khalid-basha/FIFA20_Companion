@@ -1,6 +1,6 @@
 //  ---------each login will be inserted like this 
 
-  const express = require('express');
+const express = require('express');
 const mysql =require('mysql');
 // Creat Connection 
 const db = mysql.createConnection ({
@@ -22,7 +22,7 @@ const appl=express.Router();
    // Verify login information (name and password)
    appl.get('/Verify',(req,res)=>{
 
-    var name = req.query.name;
+var name = req.query.name;
 var pass = req.query.password;
 var sql = 'SELECT * FROM accounts WHERE name =? and password =?';
 db.query(sql, [name, pass], function (err, result) {
@@ -30,7 +30,9 @@ db.query(sql, [name, pass], function (err, result) {
   if (err) throw err;
   if(result =[]){
     res.json("not found ")
-  }else{
+  } 
+  else 
+  {
     console.log(result);
     res.send(result);
 
