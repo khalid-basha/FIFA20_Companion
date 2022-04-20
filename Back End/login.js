@@ -20,17 +20,29 @@ const appl=express.Router();
 
 
    // Verify login information (name and password)
-   appl.get('/Verify/:password',(req,res)=>{
-    let sql = `SELECT *FROM accounts WHERE password =${req.params.password}`;
-    let query =db.query(sql,(err,results)=>{
-      if(err) throw err ;
-      console.log(results);
-      res.send(results);
-         });
+   appl.get('/Verify',(req,res)=>{
+
+    var name = req.query.name;
+var pass = req.query.password;
+var sql = 'SELECT * FROM accounts WHERE name =? and password =?';
+db.query(sql, [name, pass], function (err, result) {
+
+  if (err) throw err;
+  if(result =[]){
+    res.json("not found ")
+  }else{
+    console.log(result);
+    res.send(result);
+
+
+  }
+
+});
+
+
+
     });
 
-
-  //to run it tyoe in terminal ("node login.js")
 
   //Query a Database
 
