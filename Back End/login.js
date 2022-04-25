@@ -19,20 +19,25 @@ const appl=express.Router();
 
 
 
-   // Verify login information (name and password)
+   // Verify login information (email and password)
    appl.get('/as',(req,res)=>{
 
-    var name = req.query.name;
+var email = req.query.email;
 var pass = req.query.password;
-var sql = 'SELECT * FROM accounts WHERE name =? and password =?';
-db.query(sql, [name, pass], function (err, result) {
+var sql = 'SELECT * FROM all_accounts WHERE email =? and password =?';
+db.query(sql, [email, pass], function (err, result) {
 
   if (err) throw err;
-  if(result){
-    console.log(result);
+
+  if(result !='')
+  {
+    
     res.send(result);
-  }else{
-    res.json("not found ")
+
+  }
+  
+  else{
+    res.json("Email or password is incorrect")
 
     
 

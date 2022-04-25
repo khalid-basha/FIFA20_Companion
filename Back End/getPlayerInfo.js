@@ -20,24 +20,27 @@ console.log('MySql Connected ...');
 });
 const appl=express.Router();
 
-  // Select palyers dpending on part of their name
-  appl.get('/add2',(req,res)=>{
-    var Lname = req.query.Lname;
 
-    let sql = 'SELECT *FROM players WHERE Lname  LIKE  "%?%" ';
+
+  // Select palyers dpending on part of their name
+  appl.get('/find',(req,res)=>{
+    
+    var Lname = '%'+req.query.Lname+'%';
+
+    let sql = 'SELECT * FROM players WHERE Lname like ? ';
     db.query(sql,[Lname], function (err, result) {
 
       if (err) throw err;
-      if(result){
+      if(result !=''){
     
-        console.log(result);
+        //console.log(result);
         res.send(result);
     
       } 
       else 
       {
         
-        res.json("not found ");
+        res.json("not found players ");
       }
     
     });
