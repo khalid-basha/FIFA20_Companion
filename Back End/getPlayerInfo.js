@@ -33,7 +33,6 @@ const appl=express.Router();
       if (err) throw err;
       if(result !=''){
     
-        //console.log(result);
         res.send(result);
     
       } 
