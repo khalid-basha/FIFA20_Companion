@@ -25,10 +25,10 @@ const appl=express.Router();
   // Select palyers dpending on part of their name
   appl.get('/find',(req,res)=>{
     
-    var Lname = '%'+req.query.Lname+'%';
+    var lName = '%'+req.query.lName+'%';
 
-    let sql = 'SELECT * FROM players WHERE Lname like ? ';
-    db.query(sql,[Lname], function (err, result) {
+    let sql = 'SELECT * FROM players WHERE lName like ? ';
+    db.query(sql,[lName], function (err, result) {
 
       if (err) throw err;
       if(result !=''){
