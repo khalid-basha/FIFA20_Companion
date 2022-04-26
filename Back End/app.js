@@ -10,12 +10,12 @@ app.use(bodyParser.json());
 const Login=require('./login');
 const SignUp=require('./SignUp');
 
-const GetPlayer=require('./getPlayerInfo');
+const searchPlayers=require('./searchPlayers');
 
 app.use('/login',Login)
 app.use('/SignUp',SignUp)
 
-app.use('/getPlayerInfo',GetPlayer)
+app.use('/searchPlayers',searchPlayers)
 
 
 app.listen('3000',()=> 
