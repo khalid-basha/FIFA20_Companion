@@ -22,13 +22,21 @@ const appl=express.Router();
 
 
 
-  // Select palyers dpending on part of their name
+  // Select palyers dpending on part of their name   
+    
+    
+
   appl.get('/find',(req,res)=>{
     
     var lName = '%'+req.query.lName+'%';
+    var overallMin = req.query.overall;
+    var overallMax = req.query.overall;
+    var ageMin = req.query.age;
+    var ageMax = req.query.age;
+    var position = '%'+req.query.position+'%';
 
-    let sql = 'SELECT * FROM players WHERE lName like ? ';
-    db.query(sql,[lName], function (err, result) {
+    let sql = 'SELECT * FROM players WHERE Lname like ? AND overall BETWEEN ? AND ? AND age BETWEEN ? AND ? AND position like ?';
+    db.query(sql,[lName, overallMin, overallMax, ageMin, ageMax, position], function (err, result) {
 
       if (err) throw err;
       if(result !=''){
