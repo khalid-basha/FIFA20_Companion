@@ -59,6 +59,7 @@ let query =db.query(sql,post, (err,result)=>{
   if(err) throw err ;
   console.log(result);
   res.send('the account is added ...');
+  redirect('/login/login');
      });
 
 
