@@ -44,6 +44,8 @@
   }
 // insert 
 
+
+
 appl.get('/newAccount',(req,res)=>{
 
 var email = req.query.email;
