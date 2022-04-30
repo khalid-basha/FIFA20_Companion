@@ -6,7 +6,7 @@
 
 const express = require('express');
 const mysql =require('mysql');
-const authenticate = require('./authenticate');
+const authenticate = require('./authenticate'); /////  1
 // Creat Connection 
 const db = mysql.createConnection ({
   host: "localhost",
@@ -22,7 +22,7 @@ console.log('MySql Connected ...');
 const appl=express.Router();
 
 
-appl.use(authenticate);
+appl.use(authenticate);///       2
   // Select palyers dpending on part of their name
   appl.get('/find',(req,res)=>{
     

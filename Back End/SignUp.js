@@ -57,9 +57,9 @@ let post={name:name,password:pass,email:email};
 let sql = 'INSERT INTO all_accounts SET ?';
 let query =db.query(sql,post, (err,result)=>{
   if(err) throw err ;
-  console.log(result);
+  //console.log(result);
   res.send('the account is added ...');
-  redirect('/login/login');
+  //redirect('/login/login');
      });
 
 
