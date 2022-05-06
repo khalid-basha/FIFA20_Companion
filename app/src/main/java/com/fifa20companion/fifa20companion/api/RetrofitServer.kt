@@ -1,24 +1,26 @@
 package com.fifa20companion.fifa20companion.api
 
-import retrofit2.Call
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
+
 
 object RetrofitServer {
 
 
     private const val BASE_URL =
-        "https://api.jsonserve.com/uXfvKO/"
+        "https://api.jsonserve.com/"
+    private var gson: Gson = GsonBuilder()
+        .setLenient()
+        .create()
     private val retrofit = Retrofit.Builder()
-
-
-        .addConverterFactory(GsonConverterFactory.create())
+        .addConverterFactory(GsonConverterFactory.create(gson))
         .baseUrl(BASE_URL)
         .build()
         .create(ApiRequests::class.java)
 
-    fun getAllPlayers(): Call<Player> {
-        return retrofit.getAllPlayers()
+    fun getRetrofitApi(): ApiRequests? {
+        return retrofit
     }
 }
