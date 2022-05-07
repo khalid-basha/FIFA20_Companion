@@ -22,11 +22,14 @@ const Login=require('./login');
 const SignUp=require('./SignUp');
 const Logout = require('./logout');
 const searchPlayers=require('./searchPlayers');
+const teamposition=require('./teamposition');
+
 
 app.use('/login',Login)
 app.use('/SignUp',SignUp);
 app.use('/logout',Logout)
 app.use('/searchPlayers',searchPlayers)
+app.use('/teamposition',teamposition)
 app.use(authenticate);
 
 

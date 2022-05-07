@@ -18,7 +18,7 @@ const appl=express.Router();
 
 appl.use(authenticate);///       2
 
-appl.get('/find',(req,res)=>{
+appl.get('/addteam',(req,res)=>{
     
     var email = req.query.email;
 
