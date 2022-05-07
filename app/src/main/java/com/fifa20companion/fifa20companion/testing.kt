@@ -21,7 +21,7 @@ fun main() {
         override fun onResponse(call: Call<Player>, response: Response<Player>) {
            if(call.isExecuted ){
                response.isSuccessful
-               response.body()?.name
+               response.body()
 
 
            }

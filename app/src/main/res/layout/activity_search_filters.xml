@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/searchBtn"
             android:layout_width="220dp"
             android:layout_height="65dp"
             android:layout_gravity="center|center_horizontal|center_vertical"
@@ -110,7 +110,7 @@
                         app:layout_constraintVertical_bias="0.122" />
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName5"
+                        android:id="@+id/name"
                         android:layout_width="273dp"
                         android:layout_height="48dp"
                         android:background="#722E333C"
@@ -230,7 +230,7 @@
                         android:fontFamily="@font/roboto_bold"
                         android:hint="99"
                         android:inputType="numberDecimal"
-                        android:singleLine="true"
+                        android:selectAllOnFocus="false"
                         android:textAlignment="center"
                         android:textColor="@color/white_f2"
                         android:textColorHint="#8BF2F2F2"
@@ -528,6 +528,7 @@
 
                     <Spinner
                         android:id="@+id/spinner"
+                        style="@android:style/Widget.DeviceDefault.Light.Spinner"
                         android:layout_width="291dp"
                         android:layout_height="48dp"
                         android:backgroundTint="@color/yellow"
