@@ -10,7 +10,7 @@ object RetrofitServer {
 
 
     private const val BASE_URL =
-        "https://api.jsonserve.com/"
+        "http://10.0.2.2:3000/"
     private var gson: Gson = GsonBuilder()
         .setLenient()
         .create()
