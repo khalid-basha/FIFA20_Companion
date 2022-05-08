@@ -1,7 +1,7 @@
 //  ---------each login will be inserted like this 
 
 const express = require('express');
-const db = require('./databaseConect').db; // use this line to login to the database 
+const db = require('./BusinessLayer/databaseConect').db; // use this line to login to the database 
 // const connect = require('./databaseConect')
 
 
