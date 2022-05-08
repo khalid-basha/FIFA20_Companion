@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 
-import com.fifa20companion.fifa20companion.api.Player
+import com.fifa20companion.fifa20companion.modulers.Player
 import com.fifa20companion.fifa20companion.api.RetrofitServer
 import retrofit2.Call
 import retrofit2.Callback
@@ -94,10 +94,8 @@ class SearchFilters : AppCompatActivity() {
                         if(response.isSuccessful)
                         {
                             val intent = Intent(this@SearchFilters, SearchPlayerResult::class.java)
-                            intent.putExtra("listPlayers",response.body() as Array<Player>)
-                            Toast.makeText(this@SearchFilters,"response Successful :"+
-                                    response.body().toString(), Toast.LENGTH_SHORT).show()
-                            println(response.body()!![0])
+                            intent.putExtra("listPlayers", response.body()?.toList()?.take(300)
+                                ?.toTypedArray() as Array<Player>)
 
                            startActivity(intent)
 
