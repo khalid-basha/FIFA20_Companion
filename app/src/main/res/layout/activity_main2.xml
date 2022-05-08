@@ -47,6 +47,7 @@
                 android:padding="8dp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSearch"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
@@ -112,6 +113,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardShowPlayers"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"

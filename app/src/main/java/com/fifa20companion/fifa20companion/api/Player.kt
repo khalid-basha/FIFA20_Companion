@@ -1,4 +1,4 @@
-package com.fifa20companion.fifa20companion.modulers
+package com.fifa20companion.fifa20companion.api
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

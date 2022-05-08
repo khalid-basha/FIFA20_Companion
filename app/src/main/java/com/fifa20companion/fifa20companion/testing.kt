@@ -1,6 +1,6 @@
 package com.fifa20companion.fifa20companion
 
-import com.fifa20companion.fifa20companion.modulers.Player
+import com.fifa20companion.fifa20companion.api.Player
 import com.fifa20companion.fifa20companion.api.RetrofitServer
 import retrofit2.Call
 import retrofit2.Callback

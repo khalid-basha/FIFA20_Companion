@@ -1,6 +1,5 @@
 package com.fifa20companion.fifa20companion.api
 
-import com.fifa20companion.fifa20companion.modulers.Player
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
