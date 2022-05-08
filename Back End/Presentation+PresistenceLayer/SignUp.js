@@ -45,6 +45,24 @@ var name = req.query.name;
 var pass = req.query.password;
 let post={name:name,password:pass,email:email};
 let sql = 'INSERT INTO all_accounts SET ?';
+let sql2 = 'INSERT INTO teamposition email = ?';
+db.query(sql2, [email], function (err, result) {
+
+  if (err)
+  {
+    res.json("Email exists")
+
+  }
+  
+  else
+  {
+    res.json("done ")
+    
+  }
+});
+
+
+
 let query =db.query(sql,post, (err,result)=>{
   if(err) throw err ;
   //console.log(result);
