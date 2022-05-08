@@ -38,7 +38,7 @@ appl.get('/addteam',(req,res)=>{
       {
      
        /////////////////    GK  //////////////////////////////////
-        let GKs = "SELECT * FROM players WHERE lName like ? and position = '%GK%' and available ='y'";
+        let GKs = "SELECT * FROM players WHERE lName like ? and position = 'GK' and available ='y'";
         db.query(GKs,[GK], function (err, result) {
           
        if (err)
