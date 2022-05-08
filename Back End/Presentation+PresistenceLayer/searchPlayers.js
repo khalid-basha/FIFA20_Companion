@@ -5,8 +5,8 @@
   //  ---------each login will be inserted like this 
 
 const express = require('express');
-const authenticate = require('./BusinessLayer/authenticate'); /////  1
-const db = require('./BusinessLayer/databaseConect').db;
+const authenticate = require('../BusinessLayer/authenticate'); /////  1
+const db = require('../BusinessLayer/databaseConect').db;
 
 const appl=express.Router();
 
@@ -22,13 +22,35 @@ appl.use(authenticate);///       2
     var minAge=req.query.minAge;
     var maxAge=req.query.maxAge;
 
+    if (position == 'all'){
+
+      let sql = 'SELECT * FROM players WHERE lName like ?  and overall BETWEEN ? and ?  and age  BETWEEN ? and ?';
+    
+      db.query(sql,[lName,minOverall,maxOverall,minAge,maxAge], function (err, result) {
+  
+        if (err) throw err;
+        if(result !='')
+        {
+          res.send(result);
+      
+        } 
+        else 
+        {
+          
+          res.json("not found players ");
+        }
+      
+      });
+
+    }else {
+
     let sql = 'SELECT * FROM players WHERE lName like ?  and overall BETWEEN ? and ?  and age  BETWEEN ? and ? and position like ?';
+    
     db.query(sql,[lName,minOverall,maxOverall,minAge,maxAge,position], function (err, result) {
 
       if (err) throw err;
       if(result !='')
       {
-    
         res.send(result);
     
       } 
@@ -39,7 +61,10 @@ appl.use(authenticate);///       2
       }
     
     });
-    });
+    }
+  });
+  
+  
 
 
 

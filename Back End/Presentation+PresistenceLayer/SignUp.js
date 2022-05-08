@@ -1,6 +1,6 @@
 
   const express = require('express');
-  const db = require('./BusinessLayer/databaseConect').db;
+  const db = require('../BusinessLayer/databaseConect').db;
 
 
 

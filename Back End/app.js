@@ -18,11 +18,11 @@ app.use(session);
 
 
 
-const Login=require('./login');
-const SignUp=require('./SignUp');
-const Logout = require('./logout');
-const searchPlayers=require('./searchPlayers');
-const teamposition=require('./teamposition');
+const Login=require('./Presentation+PresistenceLayer/login');
+const SignUp=require('./Presentation+PresistenceLayer/SignUp');
+const Logout = require('./Presentation+PresistenceLayer/logout');
+const searchPlayers=require('./Presentation+PresistenceLayer/searchPlayers');
+const teamposition=require('./Presentation+PresistenceLayer/teamposition');
 
 
 app.use('/login',Login)

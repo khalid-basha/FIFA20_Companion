@@ -1,5 +1,5 @@
 const express = require('express');
-const authenticate = require('./BusinessLayer/authenticate');
+const authenticate = require('../BusinessLayer/authenticate');
 
 
 const appl=express.Router();
