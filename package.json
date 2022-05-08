@@ -1,0 +1,19 @@
+{
+  "name": "fifa20_companion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalid-basha/FIFA20_Companion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalid-basha/FIFA20_Companion/issues"
+  },
+  "homepage": "https://github.com/khalid-basha/FIFA20_Companion#readme",
+  "description": ""
+}
