@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.fifa20companion.fifa20companion.modulers.Player
+import com.fifa20companion.fifa20companion.api.Player
 
 class Adapter(private val mList: Array<Player>, private val cellClickListener: CellClickListener) : RecyclerView.Adapter<Adapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adapter.ViewHolder {

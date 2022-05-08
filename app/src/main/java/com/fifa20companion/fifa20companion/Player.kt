@@ -3,7 +3,7 @@ package com.fifa20companion.fifa20companion
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import com.fifa20companion.fifa20companion.modulers.Player
+import com.fifa20companion.fifa20companion.api.Player
 
 class Player : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

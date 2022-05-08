@@ -64,10 +64,10 @@
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
+                    android:hint="Enter Here"
                     android:inputType="textPersonName"
                     android:paddingStart="10sp"
                     android:paddingEnd="10sp"
-                    android:text="Enter Here"
 
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -90,21 +90,25 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/editTextTextEmailAddress3"
+
+                    android:inputType="textEmailAddress"
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16sp"
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
-                    android:text="Enter Here"
+                    android:hint="Enter Here"
+
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
 
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:autofillHints="" />
+                    />
+
             </LinearLayout>
 
             <LinearLayout
@@ -131,11 +135,11 @@
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
+                    android:hint="Enter Here"
                     android:importantForAutofill="no"
                     android:inputType="textPersonName|textPassword"
                     android:paddingLeft="10sp"
                     android:paddingRight="10sp"
-                    android:text="Enter Here"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
@@ -165,11 +169,11 @@
                     android:layout_marginBottom="16sp"
                     android:background="#2e333c"
                     android:ems="10"
+                    android:hint="Enter Here"
                     android:importantForAutofill="no"
                     android:inputType="textPersonName|textPassword"
                     android:paddingStart="10sp"
                     android:paddingEnd="10sp"
-                    android:text="Enter Here"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </LinearLayout>

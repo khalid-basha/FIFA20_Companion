@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.fifa20companion.fifa20companion.modulers.Player
+import com.fifa20companion.fifa20companion.api.Player
 
 class SearchPlayerResult : AppCompatActivity(),CellClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
