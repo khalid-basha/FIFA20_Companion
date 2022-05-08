@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql =require('mysql');
 const authenticate = require('./authenticate'); /////  1
+
 // Creat Connection 
 const db = mysql.createConnection ({
   host: "localhost",
@@ -20,10 +21,10 @@ appl.use(authenticate);///       2
 
 appl.get('/addteam',(req,res)=>{
     
-    var email = req.query.email;
+   
 
     let sql = 'SELECT * FROM teamposition WHERE email =?';
-    db.query(sql,[email], function (err, result) {
+    db.query(sql,[req.session.user], function (err, result) {
 
       if (err) throw err;
       if(result !='')
