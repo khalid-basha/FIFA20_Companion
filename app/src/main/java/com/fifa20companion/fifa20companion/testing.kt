@@ -1,16 +1,10 @@
 package com.fifa20companion.fifa20companion
 
-import com.fifa20companion.fifa20companion.api.Player
+import com.fifa20companion.fifa20companion.modulers.Player
 import com.fifa20companion.fifa20companion.api.RetrofitServer
-import com.fifa20companion.fifa20companion.modulers.Root
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.net.URL
-import java.util.*
-import kotlin.collections.ArrayList
 
 
 fun main() {

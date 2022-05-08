@@ -1,9 +1,10 @@
-package com.fifa20companion.fifa20companion.api
+package com.fifa20companion.fifa20companion.modulers
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
+data class Player (
 
-data class Player(
-    @SerializedName("id") var id: Int? = null,
+    @SerializedName("id") var  id: Int? = null,
     @SerializedName("sName") var sName: String? = null,
     @SerializedName("lName") var lName: String? = null,
     @SerializedName("age") var age: Int? = null,
@@ -15,4 +16,4 @@ data class Player(
     @SerializedName("price") var price: Int? = null,
     @SerializedName("position") var position: String? = null,
     @SerializedName("foot") var foot: String? = null
-)
+): Serializable
