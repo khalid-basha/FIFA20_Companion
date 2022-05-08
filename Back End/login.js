@@ -1,29 +1,13 @@
 //  ---------each login will be inserted like this 
 
 const express = require('express');
-const mysql =require('mysql');
+const db = require('./databaseConect').db; // use this line to login to the database 
+// const connect = require('./databaseConect')
 
 
 
-
-
-
-
-
-// Creat Connection 
-const db = mysql.createConnection ({
-  host: "localhost",
-  user: "root", 
-   password:"", 
-  database: "fifa"  
-});
-// conect 
-db.connect( (err)=>{
-if (err){throw err;}
-console.log('MySql Connected ...');
-});
 const appl=express.Router();
-
+// appl.use(connect);
 
 
 
