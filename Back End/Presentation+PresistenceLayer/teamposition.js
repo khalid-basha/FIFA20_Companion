@@ -28,9 +28,9 @@ appl.get('/addteam',(req,res)=>{
   var RW='%'+req.query.RW+'%';
 
 
-  
+  var ema=req.session.user;
     let sql = 'SELECT * FROM teamposition WHERE email =?';
-    db.query(sql,[req.session.user], function (err, result) {
+    db.query(sql,[ema], function (err, result) {
 
       if (err) throw err;
 
@@ -38,7 +38,7 @@ appl.get('/addteam',(req,res)=>{
       {
      
        /////////////////    GK  //////////////////////////////////
-        let GKs = "SELECT * FROM players WHERE lName like ? and position = 'GK' and available ='y'";
+        let GKs = "SELECT * FROM players WHERE lName like ? and position = '%GK%' and available ='y'";
         db.query(GKs,[GK], function (err, result) {
           
        if (err)
@@ -60,15 +60,14 @@ appl.get('/addteam',(req,res)=>{
            {
 
           //
-          var GKsss = "UPDATE teamposition SET GK = ? WHERE email like ?";
-          db.query(GKsss,[req.query.GK],[req.session.user], function (err, result) {
+          var GKsss = 'UPDATE teamposition SET GK = ? WHERE email =?';
+          db.query(GKsss,[req.query.GK,ema], function (err, result) {
   
             if (err)
             res.json("Error")
   
              else 
-  
-             res.json("done")
+           res.json("done")
   
            
           });
