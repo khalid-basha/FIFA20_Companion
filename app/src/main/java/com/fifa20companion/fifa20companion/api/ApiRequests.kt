@@ -1,8 +1,9 @@
 package com.fifa20companion.fifa20companion.api
 
+import com.fifa20companion.fifa20companion.modulers.LogInBody
+import com.fifa20companion.fifa20companion.modulers.SignUpBody
 import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface ApiRequests {
 
@@ -17,5 +18,13 @@ interface ApiRequests {
 
     @GET("J1d9-9")
     fun getPlayer():Call<Player>
+
+    @Headers("Content-Type:application/json")
+    @POST("login/login")
+    fun login(@Body info: LogInBody): Call<Any>
+
+    @Headers("Content-Type:application/json")
+    @POST("SignUp/newAccount")
+    fun signup(@Body info: SignUpBody): Call<Any>
 
 }
