@@ -23,6 +23,7 @@ const SignUp=require('./Presentation+PresistenceLayer/SignUp');
 const Logout = require('./Presentation+PresistenceLayer/logout');
 const searchPlayers=require('./Presentation+PresistenceLayer/searchPlayers');
 const teamposition=require('./Presentation+PresistenceLayer/teamposition');
+const GK=require('./Presentation+PresistenceLayer/Team/GK');
 
 
 app.use('/login',Login)
@@ -30,6 +31,8 @@ app.use('/SignUp',SignUp);
 app.use('/logout',Logout)
 app.use('/searchPlayers',searchPlayers)
 app.use('/teamposition',teamposition)
+app.use('/GK',GK)
+
 app.use(authenticate);
 
 
