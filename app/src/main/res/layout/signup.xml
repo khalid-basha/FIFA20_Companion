@@ -14,7 +14,7 @@
         android:layout_height="163dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintBottom_toBottomOf="@+id/toSign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/nameSign"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16sp"
@@ -90,7 +90,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress3"
+                    android:id="@+id/emailSign"
 
                     android:inputType="textEmailAddress"
 
@@ -128,7 +128,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/pass1Sign"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16sp"
@@ -162,7 +162,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/pass2Sign"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16sp"
@@ -181,7 +181,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/SignUp"
         android:layout_width="193dp"
         android:layout_height="49dp"
         android:layout_marginBottom="52dp"
@@ -196,7 +196,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/toLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Do you have Account?Login"
@@ -204,7 +204,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp"
         app:layout_constraintVertical_bias="0.59" />
 
 
