@@ -18,6 +18,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val cardSearch:CardView =findViewById(R.id.cardSearch)
         val cardShowPlayers:CardView =findViewById(R.id.cardShowPlayers)
+        val cardShowCharts:CardView =findViewById(R.id.chartsCard)
 
         cardSearch.setOnClickListener{
             val intent = Intent(this@MainActivity2, SearchFilters::class.java)
